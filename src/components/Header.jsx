@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 export default class extends React.Component {
   constructor(props){
     super();
@@ -7,9 +7,11 @@ export default class extends React.Component {
       AuthStatus:!localStorage.getItem("sessionId") ? null : localStorage.getItem("sessionId")
     }
   }
-   LogoutUser=()=>{
-      localStorage.clear();
-      window.location.href("/");  
+  
+   LogoutUser=()=>{     
+     localStorage.clear();
+    let pathUrl = "http://swipecart.herokuapp.com/";
+    window.location.href = pathUrl;   
     }
   
 render(){
