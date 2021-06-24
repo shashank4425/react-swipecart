@@ -121,3 +121,12 @@ span.title-tag {
     text-align: center;
     font-family: AllianzSansBold;
 }
+.error {
+    padding: 12px 11px;
+    margin: 0px 12px;
+}
+span.Error {
+    font-size: 0.9rem;
+    color: #d51d25;
+    text-align: center;
+}
