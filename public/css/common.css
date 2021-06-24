@@ -1,0 +1,76 @@
+
+  .header-secondary {
+    background: #2874f0;
+    width: 100%;
+    height: 59px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+  .container-fluid {
+    height: 100%;
+  }
+  div.left-sec {
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+  }
+  .brand-logo {
+    margin: 6px 0px;
+    position: absolute;
+    left: 20%;
+    padding:4px;
+  }
+  .more{
+    font-size:11px;
+    color:#FFE933;
+  }
+  .brand-logo a {
+    text-decoration: none;
+  }
+  .logo {
+    display: block;
+    background: transparent;
+  }
+  .brand-logo img {
+    margin: 0px 0px;
+  }
+  .brand-logo span {
+    bottom:10px;
+    display: block;
+    position: relative;
+  }
+  .ex {
+    color: #fff;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: AllianzSansBold;
+  }
+  .brand-logo i {
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+  }
+  div.right-sec {
+    float: right;
+    height: 100%;
+  }
+  .ac-btn {
+    margin: 18px 11px;
+    display: inline-block;
+  }
+  .right-sec .log-btn {
+    padding: 8px 23px;
+    font-size: 1rem;
+    background: #fff;
+    color: #2874f0;
+    border: none;
+    font-family: AllianzSansBold;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px;
+  }
+  

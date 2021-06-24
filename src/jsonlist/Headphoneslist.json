@@ -1,0 +1,123 @@
+ [
+    {
+          "elcid":"225",
+          "name":"Headphone",
+          "title": "boAt 103 Wireless Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=225",
+          "prodOfferPrice": "6,99",
+          "prodPrevPrice": "7,99",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Active Black, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/103-wireless-boat-original.jpeg"
+      }, {
+          "elcid":"226",
+          "name":"Headphone",
+          "title": "boAt 235v2 Fast Charging Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=226",
+          "prodOfferPrice": "1,099",
+          "prodPrevPrice": "9,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Active Black, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/235-fast-charging-boat-original.jpeg"
+      }, {
+          "elcid":"227",
+          "name":"Headphone",
+          "title": "boAt BassHeads 220 Wired Headset",
+          "url": "/accessories?attr_brand_new_id=227",
+          "prodOfferPrice": "5,25",
+          "prodPrevPrice": "9,99",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Active Black, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/boat-220-super-extra-bass-original.jpeg"
+      }, {
+          "elcid":"228",
+          "name":"Headphone",
+          "title": "boAt BassHeads 220 Super Extra Bass",
+          "url": "/accessories?attr_brand_new_id=228",
+          "prodOfferPrice": "5,25",
+          "prodPrevPrice": "9,99",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Blue, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/boat-225-with-carrying-case-original.jpeg"
+      }, {
+          "elcid":"229",
+          "name":"Headphone",
+          "title": "JBL T450BT Extra Bass Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=229",
+          "prodOfferPrice": "2,499",
+          "prodPrevPrice": "3,499",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"White, On the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/jbl-t450bt-original.jpeg"
+      }, {
+          "elcid":"230",
+          "name":"Headphone",
+          "title": "boAt Rockerz 400 Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=230",
+          "prodOfferPrice": "1,199",
+          "prodPrevPrice": "2,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Red, Black, On the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/boat-rockerz-400-extra-bass-headp.jpeg"
+      }, {
+          "elcid":"231",
+          "name":"Headphone",
+          "title": "boAt Rockerz 400 Super Extra Bass Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=231",
+          "prodOfferPrice": "1,199",
+          "prodPrevPrice": "2,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Blue, Black, On the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/boat-rockerz-on-ear-400-headp.jpeg"
+      }, {
+          "elcid":"232",
+          "name":"Headphone",
+          "title": "boAt Rockerz 510 Super Extra Bass Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=232",
+          "prodOfferPrice": "1,899",
+          "prodPrevPrice": "3,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Blue, On the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/c-rockerz-on-ear-510-boat-headp.jpeg"
+      }, {
+          "elcid":"233",
+          "name":"Headphone",
+          "title": "boAt Rockerz 335 Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=233",
+          "prodOfferPrice": "1,999",
+          "prodPrevPrice": "3,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Raging Red, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/rockerz-335-boat-original-red.jpeg"
+      }, {
+          "elcid":"234",
+          "name":"Headphone",
+          "title": "boAt Rockerz 335 Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=234",
+          "prodOfferPrice": "1,099",
+          "prodPrevPrice": "3,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Blazing Yellow, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/rockerz-335-boat-original.jpeg"
+      }, {
+          "elcid":"235",
+          "name":"Headphone",
+          "title": "boAt Rockerz 450 Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=235",
+          "prodOfferPrice": "1,499",
+          "prodPrevPrice": "3,990",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Luscious Black, On the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/rockerz-450-boat-original-headp.jpeg"
+      },{
+          "elcid":"236",
+          "name":"Headphone",
+          "title": "boAt 100 Wireless Neckband with BT 5.0 IPX4 Bluetooth Headset",
+          "url": "/accessories?attr_brand_new_id=236",
+          "prodOfferPrice": "1,399",
+          "prodPrevPrice": "2,999",
+          "Batterylife":"15 hrs | Charging Time: 2hrs",
+          "color":"Active Black, In the Ear",
+          "prodPath":"https://swipecart.herokuapp.com/images/wireless-4-mic-active-black-boat-original.jpeg"
+      }
+  ]

@@ -1,0 +1,123 @@
+.logout-btn{
+    display:none;	
+  }
+  section {
+      height: 473px;
+  }
+  .user-reg {
+      max-width: 601px;
+      height: 450px;
+      box-shadow: 0px 0px 2px 0px;
+      position: absolute;
+      top: 21.5%;
+      left: 27%;
+      transform: translate(10px, 10px);
+      background: #fff;
+  }
+  .left-brand-des {
+    width: 36%;
+    background: #2874f0;
+    height: 100%;
+    display: inline-block;
+    border-right: 2px solid gray;
+}
+.feature-tag {
+    padding: 25px 23px;
+    color: #fff;
+}
+span.title-tag {
+    font-size: 1rem;
+    font-family: AllianzSansBold;
+}
+  div.right-sec-login {
+      float: right;
+      width: 63%;
+  }
+  .right-sec-login input {
+      padding: 15px 0px;
+      margin: 15px 0px;
+      position: relative;
+      width: 270px;
+      border-right: 0px;
+      border-top: 0px;
+      border-left: 0px;
+      outline: none;
+  }
+  
+  span.log-tag {
+      display: block;
+      padding: 10px 0px 30px 0px;
+      font-family: AllianzSansBold;
+  }
+  
+  .user-auth-tag{
+   margin: 40px;
+  }
+  .user-auth-tag-on{
+   margin: 5px 40px;
+  }
+  .login_form_btn , .signup_form_btn {
+      margin: 10px 0px;
+  }
+  .login_form_btn.loging-btn {
+      padding: 9px 29px;
+  }
+  .user-auth-tag .login-btn,.user-auth-tag-on .signup-btn,.signup_form_btn .varify-btn{
+      padding: 10px 0px;
+      color: #fff;
+      border: 0;
+      outline: none;
+     font-family: AllianzSansBold;
+      font-size: 1.1rem;
+      cursor:pointer;
+  }
+  .signup_form_btn .varify-btn{
+      background: #2874f0;
+      width: 100%;
+  }
+  .user-auth-tag-otp-on .resMess {
+      margin: 40px;
+      padding: 1px 16px;
+  }
+  .resMess .signup_form_btn {
+      width: 265px;
+  }
+  .user-auth-tag-on .signup-btn,.login_form_btn .login-btn{
+    background-color: #fb641b;
+    width: 270px;
+  }
+  
+  p.reg_link,.log_link {
+      cursor: pointer;
+      color: #2874f0;
+      text-align: center;
+      font-family: AllianzSansBold;
+  }
+  
+  .emailerror, .passerror, .cpasserror {
+      color: #e14040;
+      font-size: 12px;
+      font-family: 'AllianzSans';
+      display:none;
+  }
+
+  .auth-error{
+      color:#800040;
+  }
+  
+  p.mess {
+      text-align: center;
+      font-size: 1.3rem;
+      color: forestgreen;
+  }
+  p.Otperror {
+      text-align: center;
+      color: #d51d25;
+  }
+  .reg_link,.log_link {
+    cursor: pointer;
+    color: #2874f0;
+    margin: 13px 1px;
+    text-align: center;
+    font-family: AllianzSansBold;
+}
