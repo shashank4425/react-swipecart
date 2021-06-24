@@ -231,7 +231,7 @@ hr {
 
 @media screen and (min-width: 1200px) and (max-width: 1440px){
   .container {
-      width:75%;
+      width:80%;
   }
   }
   .maintenancePage .contentSec .title {
@@ -642,10 +642,10 @@ font-weight: bold;
 .empty_cart_sec {
   position: absolute;
   top: 13%;
-  height: 451px;
+  height: 421px;
   box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
-  left: 5%;
-  width: 91%;
+  left: 4%;
+  width: 92%;
   background-color: #fff;
 }
 .cart_mess {
