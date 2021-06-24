@@ -641,11 +641,11 @@ font-weight: bold;
 }
 .empty_cart_sec {
   position: absolute;
-  top: 17%;
-  height: 449px;
+  top: 13%;
+  height: 451px;
   box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
-  left: 7%;
-  width: 86%;
+  left: 5%;
+  width: 91%;
   background-color: #fff;
 }
 .cart_mess {
@@ -653,20 +653,20 @@ font-weight: bold;
   position: absolute;
   left: 40%;
   width: 220px;
-  top: 35%;
+  top: 40%;
 }
 .cart_mess img {
   width: 60px;
   height: 64px;
 }
 .cart_txt{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 390;
 }
 .shop_now{
      margin: 19px 0px;
     padding: 12px 4px;
-    width: 100%;
+    width: 97%;
     font-size: 1rem;
     color: #fff;
     background: #2874f0;

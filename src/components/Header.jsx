@@ -6,13 +6,12 @@ export default class extends React.Component {
     this.state={
       AuthStatus:!localStorage.getItem("sessionId") ? null : localStorage.getItem("sessionId")
     }
-  }
-  
+  }  
    LogoutUser=()=>{     
      localStorage.clear();
     let pathUrl = "http://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
-    }
+   }
   
 render(){
   return (
