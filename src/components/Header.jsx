@@ -9,12 +9,9 @@ export default class extends React.Component {
   }
    LogoutUser=()=>{
       localStorage.clear();
-      this.setState(prevState=>{
-       return {
-         AuthStatus:prevState.AuthStatus=null
-       }
-      })
-  }
+      window.location.href("/");  
+    }
+  
 render(){
   return (
     <> 

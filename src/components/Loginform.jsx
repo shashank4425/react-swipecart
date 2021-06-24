@@ -28,7 +28,7 @@ const Loginform=()=>{
           localStorage.setItem("sessionId", status.sessionId)
           history.push('/');
           let pathUrl = window.location.href;
-        window.location.href = pathUrl;  
+          window.location.href = pathUrl;  
         }
        }).catch(error => {
          console.log("Error got")
