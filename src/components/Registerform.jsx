@@ -29,8 +29,10 @@ import { NavLink , useHistory} from "react-router-dom";
     console.log("calling")
       axios.post("/Swipecart/api-register_auth",data).then(response => {
         const status= response.data.sessionId;    
-         localStorage.setItem("sessionId",status)
-           history.push("/")          
+        localStorage.setItem("sessionId", status.sessionId)
+        history.push('/');
+        let pathUrl = window.location.href;          
+        window.location.href = pathUrl;         
          }).catch(error => {
            console.log("Error got")
          })
