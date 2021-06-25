@@ -2,18 +2,19 @@ import React from "react";
 import { Link,useHistory } from "react-router-dom";
 export default class Header extends React.Component {
   constructor(props){
-    super();
+    super(props);
     this.state={
       AuthStatus:null
     }
   }  
    LogoutUser=()=>{     
-     localStorage.clear();
+     localStorage.clear();     
     let pathUrl = "http://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
    }
   
 render(){
+  console.log(this.props.location)
   return (
     <> 
     <div className="header-secondary">
