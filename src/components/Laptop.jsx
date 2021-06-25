@@ -49,6 +49,8 @@ function Laptop(props){
                  <h1>{Laptoplist[i].prodTitle} {Laptoplist[i].prodColor} {props.state}</h1>
                   <ul className="specs_list">
                       <li>{Laptoplist[i].GraphicProcessor}</li>
+                      <li>{Laptoplist[i].prodRam}</li>
+                      <li>{Laptoplist[i].prodDisplaySize}</li>
                       <li>{Laptoplist[i].RAMFrequency}</li>
                       <li>{Laptoplist[i].HDMIPort}</li>
                       <li>{Laptoplist[i].ProcessorVariant}</li>
