@@ -1,6 +1,13 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
+  app.use(
+    '/Swipecart/api-user-auth_token',
+     createProxyMiddleware({
+      target: 'https://swipecartapi.herokuapp.com',
+      changeOrigin: true,
+    })
+),
     app.use(
         '/Swipecart/api/GETSwipecartitems',
         createProxyMiddleware({
