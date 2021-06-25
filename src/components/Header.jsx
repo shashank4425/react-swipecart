@@ -9,7 +9,7 @@ export default class Header extends React.Component {
   }  
    LogoutUser=()=>{     
      localStorage.clear();
-    let pathUrl = window.location.href;
+    let pathUrl = "http://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
    }
   

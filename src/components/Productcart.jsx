@@ -14,7 +14,6 @@ export default class Productcart extends React.Component {
      cartitemvisibility:false
    }
   }
-  
    componentDidMount() {    
      axios.get(`/Swipecart/api/GETSwipecartitems`)
        .then(res => {    
@@ -32,7 +31,6 @@ export default class Productcart extends React.Component {
         }
        })
    }
-  
    _INCBTN(person) {
     this.setState((prevState => {
       if(prevState.countItem<4){
@@ -46,10 +44,9 @@ export default class Productcart extends React.Component {
     this.setState((prevState => {
       return{  
         countItem : prevState.countItem -1,
-      
-     }
-    }))
-    }
+      }
+     }))
+   }
     _REMOVEITEM(person){
       axios.delete(`/Swipecart/api/RemoveSwipecartitem/${person.id}`)
       .then(res => {
