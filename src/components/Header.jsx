@@ -20,13 +20,17 @@ export default class extends React.Component {
       })
   }
    LogoutUser=()=>{     
-    this.setState((prevState) =>{
-      return  {
-       AuthStatus : prevState.AuthStatus=null
-      }     
-    })
-    let pathUrl = window.location.href;
-    window.location.href = pathUrl;   
+    axios.get(`/Swipecart/api/api-logout_auth`)
+      .then(res => {    
+       const staus = res.data;  
+         this.setState((prevState) =>{
+           return  {
+            AuthStatus : staus.sessionId
+           }     
+         })
+         let pathUrl = window.location.href;
+         window.location.href = pathUrl;
+      })  
    }
   
 render(){

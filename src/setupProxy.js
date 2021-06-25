@@ -8,6 +8,13 @@ module.exports = function(app) {
       changeOrigin: true,
     })
 ),
+  app.use(
+    '/Swipecart/api/api-logout_auth',
+     createProxyMiddleware({
+      target: 'https://swipecartapi.herokuapp.com',
+      changeOrigin: true,
+     })
+   ),
     app.use(
         '/Swipecart/api/GETSwipecartitems',
         createProxyMiddleware({
