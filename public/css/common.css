@@ -43,6 +43,15 @@
     display: block;
     position: relative;
   }
+  span.cartTxt {
+    padding: 0px 3px;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: -2px 0px;
+    color: #fff;
+    text-decoration: none;
+}
   .ex {
     color: #fff;
     font-size: 0.8rem;
@@ -56,11 +65,13 @@
   div.right-sec {
     float: right;
     height: 100%;
+    width: 22%;
   }
   .ac-btn {
     margin: 18px 11px;
     display: inline-block;
   }
+  
   .right-sec .log-btn {
     padding: 8px 23px;
     font-size: 1rem;
@@ -74,4 +85,8 @@
     cursor: pointer;
     box-shadow: 0px 0px 2px 0px;
   }
-  
+  .cart_sec {
+    display: inline-block;
+    position: absolute;
+    margin: 16px 37px;
+}

@@ -34,9 +34,14 @@ render(){
            <a href="/login-auth" className="log-btn" name="login">Login</a>
           </div>
          :
+         <>
           <div className="ac-btn">
            <a onClick={this.LogoutUser} className="log-btn logout" name="login">Logout</a>
           </div>
+          <div className="cart_sec">
+           <a href="/cartitem" className="view_cart"><img src="http://localhost:3000/images/cart_ico.png"/><span className="cartTxt">Cart</span></a>
+          </div>
+          </>
           }
         </div> 
       </div>
