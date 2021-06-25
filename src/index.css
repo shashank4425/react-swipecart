@@ -164,7 +164,7 @@ hr {
   color: #212121;
 }
 .smartphones .specs_list li,.aceesories .specs_list li, .laptops .specs_list li{
-  padding: 3px 0px;
+  padding: 2px 0px;
   color: #212121;
 }
 .a-price{
@@ -193,13 +193,8 @@ hr {
     text-transform: none!important;
   color: #565959;
 }
-
-.maintenancePage {
-  width: 100%;
-  float: left;
-  text-align: center;
-  padding: 50px 0;
-  padding-top: 100px;
+.prod_desc h1 {
+  font-size: 1.7rem;
 }
 .container {
   max-width: 1440px;
@@ -207,33 +202,6 @@ hr {
   height: 50px;
   margin: 0 auto;
 }
-.maintenancePage .contentSec {
-  max-width: 500px;
-  margin: 0 auto;
-}
-.maintenancePage .pageTitle {
-  padding-bottom: 30px;
-}
-.maintenancePage .pageTitle>span {
-  font-size: 20rem;
-  font-family: AllianzSansBold;
-  color: #ff9b41;
-  line-height: 140px;
-  height: 143px;
-}
-.maintenancePage .pageTitle>span {
-  font-size: 20rem;
-  font-family: AllianzSansBold;
-  color: #ff9b41;
-  line-height: 140px;
-  height: 143px;
-}
-.maintenancePage .pageTitle .midText {
-  color: #ff9b41;
-  width: auto;
-}
-
-
 @media screen and (min-width: 1200px) and (max-width: 1440px){
   .container {
       width:80%;
@@ -287,11 +255,13 @@ height: 469px;
   height: 269px;
 }
 ::marker {
-  color: #818181;
+  color: rgb(194, 194, 194);
+  font-size: 10px;
+  display: table-cell;
 }
 
 .smartphones .specs_list,.right_sec .specs_list,.aceesories .specs_list {
- padding: 3px 27px;
+ padding: 3px 17px;
  width: 71%;
  display: inline-block;
 }
@@ -682,4 +652,37 @@ font-weight: bold;
     border-radius: 0px;
     cursor: pointer;
     box-shadow: 0px 0px 2px 0px;
+}
+.maintenancePage {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 50px 0;
+  padding-top: 100px;
+}
+
+.maintenancePage .contentSec {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.maintenancePage .pageTitle {
+  padding-bottom: 30px;
+}
+.maintenancePage .pageTitle>span {
+  font-size: 20rem;
+  font-family: AllianzSansBold;
+  color: #ff9b41;
+  line-height: 140px;
+  height: 143px;
+}
+.maintenancePage .pageTitle>span {
+  font-size: 20rem;
+  font-family: AllianzSansBold;
+  color: #ff9b41;
+  line-height: 140px;
+  height: 143px;
+}
+.maintenancePage .pageTitle .midText {
+  color: #ff9b41;
+  width: auto;
 }
