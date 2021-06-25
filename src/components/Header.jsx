@@ -1,36 +1,16 @@
 import React from "react";
-import axios from "axios";
 import { Link,useHistory } from "react-router-dom";
-export default class extends React.Component {
+export default class Header extends React.Component {
   constructor(props){
     super();
     this.state={
       AuthStatus:null
     }
   }  
-  componentDidMount() {    
-    axios.get(`/Swipecart/api-user-auth_token`)
-      .then(res => {    
-       const staus = res.data;  
-         this.setState((prevState) =>{
-           return  {
-            AuthStatus : staus.sessionId
-           }     
-         })
-      })
-  }
    LogoutUser=()=>{     
-    axios.get(`/Swipecart/api/api-logout_auth`)
-      .then(res => {    
-       const staus = res.data;  
-         this.setState((prevState) =>{
-           return  {
-            AuthStatus : staus.sessionId
-           }     
-         })
-         let pathUrl = window.location.href;
-         window.location.href = pathUrl;
-      })  
+     localStorage.clear();
+    let pathUrl = window.location.href;
+    window.location.href = pathUrl;   
    }
   
 render(){
@@ -49,7 +29,7 @@ render(){
         </div>
         </div>
         <div className="right-sec">
-        {!this.state.AuthStatus ? 
+        {!localStorage.getItem("sessionId") ? 
           <div className="ac-btn">
            <a href="/login-auth" className="log-btn" name="login">Login</a>
           </div>
