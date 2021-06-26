@@ -1,5 +1,5 @@
 import React from "react";
-import { Link,useHistory } from "react-router-dom";
+import { Link,useHistory,NavLink } from "react-router-dom";
 export default class Header extends React.Component {
   constructor(props){
     super(props);
@@ -39,7 +39,7 @@ render(){
            <a onClick={this.LogoutUser} className="log-btn logout" name="login">Logout</a>
           </div>
           <div className="cart_sec">
-           <a href="/cartitem" className="view_cart"><img src="http://swipecart.herokuapp.com/images/cart_ico.png"/><span className="cartTxt">Cart</span></a>
+          <NavLink exact to="/cartitem" className="view_cart"><img src="http://swipecart.herokuapp.com/images/cart_ico.png"/><span className="cartTxt">Cart</span></NavLink>
           </div>
           </>
           }

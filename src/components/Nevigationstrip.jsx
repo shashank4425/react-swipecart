@@ -9,8 +9,7 @@ export default class Nevigationstrip extends React.Component{
              <NavLink exact to="/smartphones">Smartphones</NavLink>
              <NavLink exact to="/laptops">Laptops</NavLink>
              <NavLink exact to="/headphones">Headphones</NavLink>
-             <NavLink exact to="/cartitem">View Cart</NavLink>
-             <NavLink exact to="/trainingpage">Training CounterFunction</NavLink>
+             <NavLink exact to="/trainingpage">CounterFunction</NavLink>
            </ul>
          </div>
       </>
