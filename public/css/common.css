@@ -43,10 +43,13 @@
     display: block;
     position: relative;
   }
+  .cart_sec img {
+    width: 23px;
+}
   span.cartTxt {
-    padding: 0px 3px;
+    padding: 2px 3px;
     position: absolute;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin: -2px 0px;
     color: #fff;
