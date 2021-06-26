@@ -5,7 +5,6 @@ export default class Nevigationstrip extends React.Component{
       return <>
            <div className="product_nav">
             <ul className="nav-links">
-             <NavLink exact to="/" activeClassName="selected">Home</NavLink>
              <NavLink exact to="/smartphones">Smartphones</NavLink>
              <NavLink exact to="/laptops">Laptops</NavLink>
              <NavLink exact to="/headphones">Headphones</NavLink>
