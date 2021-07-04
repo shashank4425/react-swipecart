@@ -639,6 +639,7 @@ font-weight: bold;
   font-weight: 390;
 }
 .shop_now{
+  display: block;
      margin: 19px 0px;
     padding: 12px 4px;
     width: 97%;

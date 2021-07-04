@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./Header.jsx";
+import { Link } from "react-router-dom";
 class Emptycart extends React.Component{
 
   showNow=()=>{
@@ -17,7 +18,7 @@ class Emptycart extends React.Component{
               </div>
              <h1 className="cart_txt">Your cart is empty!</h1>
              <span>Add items to it now.</span>
-             <button type="button" onClick={this.showNow} className="shop_now">Shop Now</button>
+             <Link to="https://swipecart.herokuapp.com/" className="shop_now">Shop Now</Link>
              </div>
             </div>
             </div>
