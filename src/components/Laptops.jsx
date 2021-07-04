@@ -1,10 +1,12 @@
 import react from "react";
+import Header from "./Header.jsx";
 import Laptoplist from "../jsonlist/Laptopslist.json";
 import { Link} from "react-router-dom";
 import Nevigationstrip from "./Nevigationstrip.jsx";
 function Laptops(){
     return (
       <>
+       <Header/>
       <Nevigationstrip/>
       <section>
        <h1 className="total_prod">Best Selling Products <p>{Laptoplist.length} Items</p></h1>

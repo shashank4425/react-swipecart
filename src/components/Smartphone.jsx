@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header.jsx";
 import Smartphoneslist from "../jsonlist/Smartphoneslist.json";
 import axios from "axios";
 import Nevigationstrip from "./Nevigationstrip.jsx";
@@ -34,6 +35,7 @@ function Smartphone(props){
           const item=Smartphoneslist[i];
           return (
             <>
+             <Header/>
             <Nevigationstrip/>
             <div className="smartphone_product">
                <div className="listItem">

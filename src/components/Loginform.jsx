@@ -1,8 +1,10 @@
 import React from "react";
 import axios from "axios";
+import Header from "./Header.jsx";
 import { NavLink} from "react-router-dom";
 
 export default class Loginform extends React.Component{ 
+
   constructor(props){
     super(props);
     this.state={
@@ -24,7 +26,6 @@ export default class Loginform extends React.Component{
   }
     // const history=useHistory();
      LoginUser=(e)=>{
-
      e.preventDefault();
       axios.post("/Swipecart/api-user_loginauth",this.state).then(response => {
        const status= response.data      
@@ -37,7 +38,7 @@ export default class Loginform extends React.Component{
         }
         else{
           localStorage.setItem("sessionId", status.sessionId)
-           let pathUrl = "http://swipecart.herokuapp.com/";          
+           let pathUrl = "http://localhost:3000/";          
            window.location.href = pathUrl;  
         }
        }).catch(error => {
@@ -49,6 +50,7 @@ export default class Loginform extends React.Component{
     return (
      
         <>
+         <Header/>
         <div className="user-reg">
             <div className="left-brand-des">
                 <h2 className="feature-tag"><span className="log-tag">Login</span><span className="title-tag">Get Access To your orders, and many more</span></h2>

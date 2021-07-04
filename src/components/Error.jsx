@@ -1,8 +1,9 @@
 import React from "react";
-
+import Header from "./Header.jsx";
 let Error = () => {
     return(
         <>
+         <Header/>
          <div className="maintenancePage">
     <div className="container">
         <div className="contentSec">

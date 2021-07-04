@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Header from "./Header.jsx";
 import Cartloadingview from "./Cartloadingview.jsx";
 import Emptycart from  "./Emptycart.jsx";
 export default class Productcart extends React.Component {
@@ -82,8 +83,10 @@ export default class Productcart extends React.Component {
        prodPrevPrice = prodPrevPrice.reduce(function(val1, val2) { return val1 + val2; }, 0);
        prodOfferPrice = prodOfferPrice.reduce(function(val1, val2) { return val1 + val2; }, 0);
        Discount= prodPrevPrice - prodOfferPrice;
-      return (        
-        this.state.cartitemvisibility === false ? (!this.state.status ? <Cartloadingview/> :
+      return (
+        <> 
+        <Header/>
+        {this.state.cartitemvisibility === false ? (!this.state.status ? <Cartloadingview/> :
          <div className="container-fluid">
          <ul className="deatils_Section_list">
          <ul className="left_detail_list">
@@ -151,7 +154,8 @@ export default class Productcart extends React.Component {
            }
          </ul>
          </div>
-        ): <Emptycart/>
-     )
+        ): <Emptycart/>}
+        </>
+        )
    }
  }

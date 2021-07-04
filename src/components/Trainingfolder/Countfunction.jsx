@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Header from "../Header.jsx";
 export default class Counterfunction extends React.Component{
     constructor(props){
         super(props);
@@ -44,6 +44,7 @@ export default class Counterfunction extends React.Component{
       render(){
         return (
             <>
+            <Header/>
             <div className="Data">
             <div className="product-list">
              {this.state.items.map(item => 

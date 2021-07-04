@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Header from "./Header.jsx";
 import { NavLink , useHistory} from "react-router-dom";
  const RegisterForm = () =>{
   
@@ -40,6 +41,7 @@ import { NavLink , useHistory} from "react-router-dom";
 
       return (
          <>
+         <Header/>
          <div className="user-reg">
             <div className="left-brand-des">
                 <h2 className="feature-tag"><span className="log-tag">Looks like you're new here!</span><span className="title-tag">Sign up with your email id to get started</span></h2>

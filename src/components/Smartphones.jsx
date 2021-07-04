@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "./Header.jsx";
 import Smartphoneslist from "../jsonlist/Smartphoneslist.json";
 import { Link } from "react-router-dom";
 import Nevigationstrip from "./Nevigationstrip.jsx";
@@ -33,6 +34,7 @@ export default class Smartphones extends React.Component{
     console.log(productsItem)
     return(
       <>
+       <Header/>
       <Nevigationstrip/>
        <section>
        <h1 className="total_prod">Best Selling Phones <p>{Smartphoneslist.length} Items</p></h1>

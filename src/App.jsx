@@ -8,10 +8,8 @@ import Laptops from "./components/Laptops.jsx";
 import Laptop from "./components/Laptop.jsx";
 import Productcart from "./components/Productcart";
 import Cartlistpage from "./components/Cartlistpage";
-
 import LoginAuth from "./components/Loginform.jsx";
 import RegisterAuth from "./components/Registerform.jsx";
-
 import Error from "./components/Error.jsx";
 import Counterfunction from "./components/Trainingfolder/Countfunction.jsx"
 const App = () => {

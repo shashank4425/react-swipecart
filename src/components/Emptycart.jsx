@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "./Header.jsx";
 class Emptycart extends React.Component{
 
   showNow=()=>{
@@ -6,6 +7,7 @@ class Emptycart extends React.Component{
   }
   render(){
       return <>
+       <Header/>
        <div className="cart_pgsec">
            <div className="empty_cart_sec">
              <div className="cart_mess">
