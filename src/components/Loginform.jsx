@@ -38,7 +38,7 @@ export default class Loginform extends React.Component{
         }
         else{
           localStorage.setItem("sessionId", status.sessionId)
-           let pathUrl = "http://localhost:3000/";          
+           let pathUrl = "https://swipecart.herokuapp.com/";          
            window.location.href = pathUrl;  
         }
        }).catch(error => {
