@@ -35,16 +35,16 @@ ul.nav-links {
   margin: 0px 0px;
   padding: 20px 39px;
   display: flex;
-  height: 91px;
+  height: 85px;
 }
 .EC_SM img {
   width: 61px;
   bottom: 20px;
   height: 100%;
-  margin: 0px 20px;
+  margin: 0px 11px;
 }
 .EC_SM {
-  width: 99px;
+  width: 79px;
   height: 100%;
   margin: 0px 28px;
 }
@@ -52,7 +52,7 @@ ul.nav-links {
   color: #212121;
   font-weight: 500;
   font-size: 14px;
-  margin: -12px 9px;
+  margin: -14px 0px;
   text-align: center;
 }
 .EC_SM .img_Sec {
