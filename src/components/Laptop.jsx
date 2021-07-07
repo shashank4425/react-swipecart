@@ -2,7 +2,7 @@ import React from "react";
 import Laptoplist from "../jsonlist/Laptopslist.json";
 import axios from "axios";
 import Header from "./Header.jsx";
-import Nevigationstrip from "./Nevigationstrip.jsx";
+import Productstrip from "./Productstrip"
 function Laptop(props){
   var url=window.location.href,i=0;
   url=url.split("=");  
@@ -34,7 +34,7 @@ function Laptop(props){
           return (
             <>
              <Header/>
-            <Nevigationstrip/>
+            <Productstrip/>
             <div className="laptop_product">
                <div className="listItem">
                <div className="left_sec">
