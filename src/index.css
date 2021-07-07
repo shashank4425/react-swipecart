@@ -32,11 +32,35 @@ section{
   border-bottom: 1px solid#000;
 }
 ul.nav-links {
-  margin: 0px;
-  padding: 0px 8%;
+  margin: 0px 0px;
+  padding: 20px 39px;
+  display: flex;
+  height: 91px;
+}
+.EC_SM img {
+  width: 61px;
+  bottom: 20px;
+  height: 100%;
+  margin: 0px 20px;
+}
+.EC_SM {
+  width: 99px;
+  height: 100%;
+  margin: 0px 28px;
+}
+.EC_SM .title {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  margin: -12px 9px;
+  text-align: center;
+}
+.EC_SM .img_Sec {
+  width: 89px;
+  height: 70px;
+  display: inline-block;
 }
 .product_nav a {
-  padding: 0px 25px;
   text-decoration: none;
 }
 .all_pd_list {
