@@ -27,13 +27,13 @@ section{
   position: sticky;
     width: 100%;
   background: #fff;
-  line-height: 38px;
+  line-height: 35px;
   box-sizing: border-box;
   border-bottom: 1px solid#000;
 }
 ul.nav-links {
   margin: 0px 0px;
-  padding: 20px 39px;
+  padding: 14px 39px;
   display: flex;
   height: 85px;
 }
@@ -44,9 +44,9 @@ ul.nav-links {
   height: 0px;
 }
 .EC_SM img {
-  width: 61px;
+  width: 50px;
   bottom: 20px;
-  height: 100%;
+  height: 90%;
   margin: 0px 11px;
 }
 .EC_SM {
@@ -62,7 +62,6 @@ ul.nav-links {
   text-align: center;
 }
 .EC_SM .img_Sec {
-  width: 89px;
   height: 70px;
   display: inline-block;
 }
