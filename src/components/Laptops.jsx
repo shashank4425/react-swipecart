@@ -4,22 +4,42 @@ import Laptoplist from "../jsonlist/Laptopslist.json";
 import { Link} from "react-router-dom";
 import Nevigationstrip from "./Nevigationstrip.jsx";
 function Laptops(){
+
+  const SelectedBrand=(e)=>{
+    const name=e.target.value
+    this.state.products.filter(item=>{    
+      this.setState((prevState=>{
+       if(name===item.prodName){
+         console.log(item)
+        this.state.products.push(item)
+        console.log(item)
+         return{
+           ...this.state.products, products:[item]
+         }
+       }
+      }))
+    })
+  }
     return (
       <>
        <Header/>
       <Nevigationstrip/>
       <section>
-       <h1 className="total_prod">Best Selling Products <p>{Laptoplist.length} Items</p></h1>
+       <h1 className="total_prod">Best Selling Laptops <p>{Laptoplist.length} Items</p></h1>
        <div className="mid-sec">
          <div className="product-categories-sec">
          <div className="all_pd_list">
           <div className="find_pd_byname">
            <p className="ftitle">Filters</p><hr/>
            <div className="left-sec-item">
-             <li className="left-list-items"> <input type="checkbox" name="5010" value="5010"/><span className="list_name">All</span></li>
-             <li className="left-list-items"> <input type="checkbox" name="Dell"  value="Dell"/><span className="list_name">Dell</span></li>
-             <li className="left-list-items"> <input type="checkbox" name="Lenovo"  value="Lenovo"/><span className="list_name">Lenovo</span></li>
-          </div><hr/>
+           <div className="custom-select">
+          <select onChange={SelectedBrand}>
+              <option value="All">Select Item</option>
+              <option value="Dell">Dell</option>
+              <option value="Lenovo">Lenovo</option>
+         </select>
+         </div>
+          </div>
         </div>
        </div>
          </div>
