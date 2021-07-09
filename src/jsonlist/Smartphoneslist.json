@@ -437,9 +437,63 @@
                     "prodOfferPrice": "13,181",
                     "prodPrevPrice": "13,500",
                     "prodRam": "4 GB RAM",
-                    "prodRom": "64 G Storage",
+                    "prodRom": "64 GB Storage",
                     "prodDisplaySize": "6.43 inch Full HD+ Display",
                     "prodColor": "Shadow Black",
                     "quantity" : "1"
-            }
+            },
+
+
+
+              {
+                "id": "815",
+                "prodid": "50101",
+                "url":"/smartphone?brand_new_id=815",
+                "prodName": "REDMI",
+                "prodTitle": "Redmi K20 128 GB",
+                "prodPath": "https://swipecart.herokuapp.com/images/redmi-k20-na-original-imafgb4xpxutp86a.jpeg",                                
+                    "prodCamara": "48MP + 13MP + 8MP | 20MP Front Camera",
+                    "prodBattery": "4000 mAh Li-polymer Battery",
+                    "prodOfferPrice": "24,999",
+                    "prodPrevPrice": "25,299",
+                    "prodRam": "6 GB RAM",
+                    "prodRom": "128 GB Storage",
+                    "prodDisplaySize": "16.23 cm (6.39 inch) Full HD+ Display",
+                    "prodColor": "Glacier Blue",
+                    "quantity" : "1"
+            },
+              {
+                "id": "816",
+                "prodid": "50101",
+                "url":"/smartphone?brand_new_id=816",
+                "prodName": "Mi",
+                "prodTitle": "Mi 10i",
+                "prodPath": "https://swipecart.herokuapp.com/images/m10ix09-mi-original-imafz4rnuqqxpfeg.jpeg",                                
+                    "prodCamara": "108MP + 8MP + 2MP + 2MP | 16MP Front Camera",
+                    "prodBattery": "4820 mAh Battery",
+                    "prodOfferPrice": "24,834",
+                    "prodPrevPrice": "25,352",
+                    "prodRam": "8 GB RAM",
+                    "prodRom": "128 GB Storage",
+                    "prodDisplaySize": "16.94 cm (6.67 inch) Full HD+ Display",
+                    "prodColor": "Atlantic Blue,",
+                    "quantity" : "1"
+            },
+             {
+                "id": "817",
+                "prodid": "50101",
+                "url":"/smartphone?brand_new_id=817",
+                "prodName": "Mi",
+                "prodTitle": "Mi 10i 128 GB",
+                "prodPath": "https://swipecart.herokuapp.com/images/mi-10i-original-imafz53gjzqae2kr.jpeg",                                
+                    "prodCamara": "108MP + 8MP + 2MP + 2MP | 16MP Front Camera",
+                    "prodBattery": "4820 mAh Battery",
+                    "prodOfferPrice": "24,669",
+                    "prodPrevPrice": "24,999",
+                    "prodRam": "8 GB RAM",
+                    "prodRom": "128 GB Storage",
+                    "prodDisplaySize": "16.94 cm (6.67 inch) Full HD+ Display",
+                    "prodColor": "Midnight Black",
+                    "quantity" : "1"
+            }       
     ]
