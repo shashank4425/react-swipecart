@@ -25,7 +25,7 @@ function Laptops(){
        <Header/>
       <Nevigationstrip/>
       <section>
-       <h1 className="total_prod">Best Selling Laptops <p>{Laptoplist.length} Items</p></h1>
+       {/* <h1 className="total_prod">Best Selling Laptops <p>{Laptoplist.length} Items</p></h1> */}
        <div className="mid-sec">
          <div className="product-categories-sec">
          <div className="all_pd_list">

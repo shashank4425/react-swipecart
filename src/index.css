@@ -74,8 +74,8 @@ ul.nav-links {
 h1.total_prod {
   background: #fff;
   text-align: center;
-  padding: 10px 0px;
-  margin: 6px 0px;
+  padding: 3px 0px;
+  margin: 2px 0px;
   font-family: AllianzSansBold;
 }
 .total_prod p {
@@ -92,7 +92,15 @@ h1.total_prod {
   padding: 2px 0px 3px 0px;
   float: left;
   margin: 1px 0px;
-  height: 290px;
+}
+.smartphones{
+  height: 286px;
+}
+.laptops{
+  height: 260px;
+}
+.aceesories{
+  height: 260px;
 }
 .listItem {
   background: #fff;
@@ -165,13 +173,13 @@ hr {
   width: 178px;
   height: 200px;
 }
-.prod_img_lap img { 
-  width: 183px;
+.prod_img_lap img {
+  width: 191px;
   height: 180px;
 }
 .smartphones img {  
-  width: 117px;
-  height: 242px;
+  width: 120px;
+  height: 231px;
 }
 
 .prodTitle{

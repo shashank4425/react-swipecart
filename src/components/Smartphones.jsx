@@ -37,7 +37,7 @@ export default class Smartphones extends React.Component{
        <Header/>
       <Nevigationstrip/>
        <section>
-       <h1 className="total_prod">Best Selling Phones <p>{Smartphoneslist.length} Items</p></h1>
+       {/* <h1 className="total_prod">Best Selling Phones <p>{Smartphoneslist.length} Items</p></h1> */}
        <div className="mid-sec">
         <div className="product-categories-sec">
         <div className="all_pd_list">
