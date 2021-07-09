@@ -2,7 +2,8 @@ import React from "react";
 import Headphoneslist from "../jsonlist/Headphoneslist.json";
 import {Link} from "react-router-dom";
 import Header from "./Header.jsx";
-import Nevigationstrip from "./Nevigationstrip.jsx";
+//import Nevigationstrip from "./Nevigationstrip.jsx";
+import Productstrip from "./Productstrip"
 function Headphones(){
 
   const SelectedBrand=(e)=>{
@@ -23,7 +24,7 @@ function Headphones(){
       return (
         <>
          <Header/>
-       <Nevigationstrip/>
+         <Productstrip/>
         <section>
          {/* <h1 className="total_prod">Best Selling Headphones <p>{Headphoneslist.length} Items</p></h1> */}
          <div className="mid-sec">
