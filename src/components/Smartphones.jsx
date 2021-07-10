@@ -64,8 +64,10 @@ export default class Smartphones extends React.Component{
          <Link to={item.url} target="_blank">
          <div className="product smartphones" name={item.prodName}>
             <div className="listItem">
+            <div class="left_img">
              <div className="prod_img_phones">
                <img src={item.prodPath} alt="imgtag" />
+             </div>
              </div>
          <div className="mid-feature">
          <p className="prodTitle">{item.prodTitle}</p>

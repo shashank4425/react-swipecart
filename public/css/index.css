@@ -94,6 +94,12 @@ body {
     float: left;
     margin: 4px 0px;
   }
+  .smartphones .left_img {
+    /* margin: 39px 0px; */
+    position: relative;
+    left: 6%;
+    top: 8%;
+}
   .smartphones{
     height: 286px;
   }
@@ -160,11 +166,13 @@ body {
     color:#212121;
   }
   
-  .smartphones .prod_img_phones{
-    position: relative;  
-    padding: 30px 49px;
+  .smartphones .prod_img_phones {
+    position: relative;
+    height: 200px;
     display: inline-block;
-  }
+    width: 200px;
+    position: relative;
+}
   .product .prod_img_elc,.product .prod_img_lap {
     position: relative;  
     padding: 30px 16px;
@@ -178,10 +186,10 @@ body {
     width: 191px;
     height: 180px;
   }
-  .smartphones img {  
-    width: 120px;
-    height: 231px;
-  }
+  .smartphones img {
+    max-width: 100%;
+    max-height: 100%;
+}
   
   .prodTitle{
     font-family: Roboto,Arial,sans-serif;
