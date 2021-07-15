@@ -46,7 +46,7 @@ const history=useHistory();
      else{
      dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
      //history.push("/")
-       localStorage.setItem("sessionId", status.sessionId)
+       localStorage.setItem("sessionId", status.log_userId)
         let pathUrl = "https://swipecartapi.herokuapp.com";          
         window.location.href = pathUrl;  
      }
