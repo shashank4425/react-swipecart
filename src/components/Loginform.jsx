@@ -24,7 +24,7 @@ const Loginform = () =>{
        }
       }))
     }
-const dispatch=useDispatch();
+//const dispatch=useDispatch();
 const history=useHistory();
   const LoginUser=(e)=>{
   e.preventDefault();
@@ -44,7 +44,7 @@ const history=useHistory();
         //  }))
      }
      else{
-     dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
+     //dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
      //history.push("/")
        localStorage.setItem("sessionId", status.log_userId)
         let pathUrl = "http://swipecart.herokuapp.com/";          
