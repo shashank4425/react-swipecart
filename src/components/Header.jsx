@@ -13,13 +13,13 @@ export default class Header extends React.Component {
     let pathUrl = "http://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
    }
-   componentDidMount() {    
-    axios.get(`/Swipecart/api-user-auth_token`)
-      .then(res => {    
-       const responseObj = res.data;  
-      console.log(responseObj)
-      })
-  }
+  //  componentDidMount() {    
+  //   axios.get(`/Swipecart/api-user-auth_token`)
+  //     .then(res => {    
+  //      const responseObj = res.data;  
+  //     console.log(responseObj)
+  //     })
+  // }
 render(){
   return (
     <> 

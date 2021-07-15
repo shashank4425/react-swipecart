@@ -47,7 +47,7 @@ const history=useHistory();
      dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
      //history.push("/")
        localStorage.setItem("sessionId", status.log_userId)
-        let pathUrl = "https://swipecartapi.herokuapp.com";          
+        let pathUrl = "http://swipecart.herokuapp.com/";          
         window.location.href = pathUrl;  
      }
     }).catch(error => {
