@@ -3,7 +3,10 @@ import Header from "./Header.jsx";
 import Smartphoneslist from "../jsonlist/Smartphoneslist.json";
 import axios from "axios";
 import Productstrip from "./Productstrip"
+import { useSelector } from "react-redux";
 function Smartphone(props){
+  const logStatusData=useSelector((state) => state.isLogged)
+  console.log(logStatusData)
   var url=window.location.href,i=0;
   url=url.split("=");  
  

@@ -60,9 +60,7 @@ export default class Productcart extends React.Component {
         }))
         this.setState((prevState => {
           if(prevState.cartlist.length==0){
-           return {
-             cartitemvisibility : prevState.cartitemvisibility =  true
-           }
+            this.setState({ cartitemvisibility : true });
           }
          }))
       })

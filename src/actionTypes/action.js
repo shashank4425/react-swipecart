@@ -1,8 +1,8 @@
-import { ActionType } from "./constant/actionType.js"
+import { ActionType } from "../constant/ActionType";
 
-export const isLogged = (isLogged) =>{
-   return {
-    type : ActionType.isLogged,
-    payload: isLogged
-   }
+export const isLoggedUser = (isLogged) => {
+    return {
+        type: ActionType.IS_LOGGED,
+        payload: isLogged 
+    }
 }

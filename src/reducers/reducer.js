@@ -1,12 +1,15 @@
-import { ActionType } from "../constant/actionType"
+import { ActionType } from "../constant/ActionType"
 
 const initialState= {
-    status:false
+        isLogged:false
 }
 export const isLoggedReducer= (state=initialState, {type,payload}) => {
  switch(type){
-     case ActionType.isLogged: 
-       return {...state, status: payload}
+     case ActionType.IS_LOGGED: 
+       return {
+         ...state, 
+         isLogged: true
+        }
     default:
         return state   
  }

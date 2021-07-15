@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Link,useHistory,NavLink } from "react-router-dom";
 export default class Header extends React.Component {
   constructor(props){
@@ -12,7 +13,13 @@ export default class Header extends React.Component {
     let pathUrl = "http://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
    }
-  
+   componentDidMount() {    
+    axios.get(`/Swipecart/api-user-auth_token`)
+      .then(res => {    
+       const responseObj = res.data;  
+      console.log(responseObj)
+      })
+  }
 render(){
   return (
     <> 

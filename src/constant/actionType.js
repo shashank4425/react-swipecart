@@ -1,3 +1,3 @@
 export const ActionType={
-    ISLOGGED:"ISLOGGED",
+    IS_LOGGED:"IS_LOGGED",
   }

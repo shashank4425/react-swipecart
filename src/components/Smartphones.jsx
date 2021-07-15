@@ -61,7 +61,7 @@ export default class Smartphones extends React.Component{
       <div className="right-product-sec">           
         {Smartphoneslist.map(item => (
          <>
-         <Link to={item.url} target="_blank">
+         <Link to={item.url} key={item.id} target="_blank">
          <div className="product smartphones" name={item.prodName}>
             <div className="listItem">
             <div class="left_img">
