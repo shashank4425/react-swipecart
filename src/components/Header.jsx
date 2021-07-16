@@ -8,6 +8,13 @@ export default class Header extends React.Component {
       AuthStatus:null
     }
   }  
+    componentDidMount() {    
+    axios.get(`/Swipecart/api-user-auth_token`)
+      .then(res => {    
+       const responseObj = res.data;  
+      console.log(responseObj)
+      })
+  }
    LogoutUser=()=>{     
      localStorage.clear();     
     let pathUrl = "http://swipecart.herokuapp.com/";
