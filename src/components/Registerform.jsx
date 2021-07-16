@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Header from "./Header.jsx";
+import { isLoggedUser } from "../actionTypes/action";
 import { NavLink , useHistory} from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
  const RegisterForm = () =>{
-  
+  const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
+  console.log("log status" + LogStatus);
   const[data,User]=useState({
         firstname: "",
         lastname:"",
@@ -24,16 +27,19 @@ import { NavLink , useHistory} from "react-router-dom";
          }
       }))
     }
+    const dispatch=useDispatch();
     const history=useHistory();
   const RegisterUser=(e)=>{
     e.preventDefault();
     console.log("calling")
       axios.post("/Swipecart/api-register_auth",data).then(response => {
-        const status= response.data.sessionId;    
-        localStorage.setItem("sessionId", status.sessionId)
-        history.push('/');
-        let pathUrl = window.location.href;          
-        window.location.href = pathUrl;         
+        const status= response.data.sessionStatus;    
+        
+        localStorage.setItem("sessionId", status.log_userId)
+        dispatch(isLoggedUser({LogStatus:status.log_userId}))
+        history.push("/")
+        // let pathUrl = window.location.href;          
+        // window.location.href = pathUrl;         
          }).catch(error => {
            console.log("Error got")
          })
