@@ -1,13 +1,9 @@
 import React from "react";
 import axios from "axios";
 import Header from "./Header.jsx";
-import { isLoggedUser } from "../actionTypes/action";
 import { NavLink, useHistory} from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 const Loginform = () =>{ 
-  const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
-  console.log("log status" + LogStatus);
   const[Logdata,User]=useState({
     emailid: "",
     password: "",

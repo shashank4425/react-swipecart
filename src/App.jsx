@@ -1,5 +1,5 @@
 import React from "react"
-import {Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Smartphones from "./components/Smartphones.jsx";
 import Smartphone from "./components/Smartphone";
@@ -13,10 +13,10 @@ import RegisterAuth from "./components/Registerform.jsx";
 import Error from "./components/Error.jsx";
 import Counterfunction from "./components/Trainingfolder/Countfunction.jsx"
 const App = () => {
-
     return (
-        <>
-        <Switch>
+       <>
+           <Router>
+           <Switch>
         <Route exact path="/" component={Home}/>
          <Route exact path="/smartphones" component={Smartphones}/>
          <Route exact path="/smartphone" component={Smartphone}/>
@@ -30,7 +30,8 @@ const App = () => {
          <Route exact path="/trainingpage" component={Counterfunction}/>
          <Route component={Error}/>
         </Switch>
-   </>
+           </Router>
+       </>
    )
   
 }
