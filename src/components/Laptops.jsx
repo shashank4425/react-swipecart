@@ -23,7 +23,7 @@ function Laptops(){
   }
     return (
       <>
-       <Header/>
+      <Header/>
        <Productstrip/>
       <section>
        {/* <h1 className="total_prod">Best Selling Laptops <p>{Laptoplist.length} Items</p></h1> */}

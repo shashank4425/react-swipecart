@@ -86,7 +86,7 @@ export default class Productcart extends React.Component {
         
         {this.state.cartitemvisibility === false ?  (!this.state.status ? <Cartloadingview/> :
          <>
-          <Header/>
+         <Header/>
          <div className="container-fluid">
          <ul className="deatils_Section_list">
          <ul className="left_detail_list">

@@ -7,7 +7,7 @@ const Home = () => {
     // console.log("log status" + LogStatus);
     return (
         <>
-         <Header/>
+        <Header/>
         <Nevigationstrip/>
          <h1> This is Home page</h1>
         </>

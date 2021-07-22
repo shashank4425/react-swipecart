@@ -1,6 +1,7 @@
 import React from "react"
 import {BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import Home from "./components/Home.jsx";
+import Header from "./components/Header";
 import Smartphones from "./components/Smartphones.jsx";
 import Smartphone from "./components/Smartphone";
 import Headphones from "./components/Headphones.jsx";
@@ -16,7 +17,7 @@ const App = () => {
     return (
        <>
            <Router>
-           <Switch>
+           <Switch>           
         <Route exact path="/" component={Home}/>
          <Route exact path="/smartphones" component={Smartphones}/>
          <Route exact path="/smartphone" component={Smartphone}/>

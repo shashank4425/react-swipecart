@@ -1,35 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
+import { isLoggedUser } from "../actionTypes/action";
+import { useDispatch, useSelector } from "react-redux";
 import { Link,NavLink } from "react-router-dom";
-export default class Header extends React.Component {
-  constructor(props){
-    super(props);
-    this.state={
-      AuthStatus:null
-    }
-  }  
-    componentDidMount() {    
-    axios.get(`/Swipecart/api-user-auth_token`)
-      .then(res => {    
-       const responseObj = res.data;  
-      console.log(responseObj)
-      })
+const Header = () => {
+  const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
+   const dispatch=useDispatch();
+  const userAuth=async () => {
+    const responseData=await axios.get(`/Swipecart/api-user-auth_token`)
+    .then(res => {    
+     const responseObj = res.data;  
+     console.log(responseObj)
+     dispatch(isLoggedUser(responseObj))
+     console.log(LogStatus + "IS DATA")
+    })
   }
-   LogoutUser=()=>{     
+  
+   useEffect(()=>{
+        userAuth();
+    },[])
+
+  const LogoutUser=()=>{   
+    axios.get(`/Swipecart/api/api-logout_auth`)
+    .then(res => {    
+     const responseObj = res.data;  
+     console.log(responseObj)
+     dispatch(isLoggedUser(responseObj))
+
      localStorage.clear();     
-    let pathUrl = "http://swipecart.herokuapp.com/";
+    let pathUrl = "http://localhost:3000/";
     window.location.href = pathUrl;   
-   }
-  //  componentDidMount() {    
-  //   axios.get(`/Swipecart/api-user-auth_token`)
-  //     .then(res => {    
-  //      const responseObj = res.data;  
-  //     console.log(responseObj)
-  //     })
-  // }
-render(){
+   })
+}
   return (
     <> 
+    
     <div className="header-secondary">
     <div className="container">
       <div className="left-sec">
@@ -43,14 +48,15 @@ render(){
         </div>
         </div>
         <div className="right-sec">
-        {!localStorage.getItem("sessionId") ? 
+        
+        {LogStatus==false ? 
           <div className="ac-btn">
            <a href="/login-auth" className="log-btn" name="login">Login</a>
           </div>
          :
          <>
           <div className="ac-btn">
-           <a onClick={this.LogoutUser} className="log-btn logout" name="login">Logout</a>
+           <a onClick={LogoutUser} className="log-btn logout" name="login">Logout</a>
           </div>
           <div className="cart_sec">
           <NavLink exact to="/cartitem" className="view_cart"><img src="http://swipecart.herokuapp.com/images/cart_ico.png"/><span className="cartTxt">Cart</span></NavLink>
@@ -63,4 +69,4 @@ render(){
     </>
   )
  }
-}
+export default Header;

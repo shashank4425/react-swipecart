@@ -56,7 +56,7 @@ const history=useHistory();
   }
 return (     
   <>
-   <Header/>
+  <Header/>
   <div className="user-reg">
       <div className="left-brand-des">
           <h2 className="feature-tag"><span className="log-tag">Login</span><span className="title-tag">Get Access To your orders, and many more</span></h2>

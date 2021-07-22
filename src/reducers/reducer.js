@@ -8,7 +8,7 @@ export const isLoggedReducer= (state=initialState, {type,payload}) => {
      case ActionType.IS_LOGGED: 
        return {
          ...state, 
-         isLogged: true
+         isLogged: payload
         }
     default:
         return state   

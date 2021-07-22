@@ -23,7 +23,8 @@ function Headphones(){
   }
       return (
         <>
-         <Header/>
+
+        <Header/>
          <Productstrip/>
         <section>
          {/* <h1 className="total_prod">Best Selling Headphones <p>{Headphoneslist.length} Items</p></h1> */}

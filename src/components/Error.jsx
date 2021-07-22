@@ -3,7 +3,7 @@ import Header from "./Header.jsx";
 let Error = () => {
     return(
         <>
-         <Header/>
+        <Header/>
          <div className="maintenancePage">
     <div className="container">
         <div className="contentSec">

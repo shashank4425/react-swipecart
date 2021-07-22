@@ -33,7 +33,7 @@ function Laptop(props){
           const item=Laptoplist[i];
           return (
             <>
-             <Header/>
+            <Header/>
             <Productstrip/>
             <div className="laptop_product">
                <div className="listItem">

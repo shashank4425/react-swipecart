@@ -36,7 +36,7 @@ function Smartphone(props){
           const item=Smartphoneslist[i];
           return (
             <>
-             <Header/>
+            <Header/>
              <Productstrip/>
             <div className="smartphone_product">
                <div className="listItem">

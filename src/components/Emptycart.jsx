@@ -8,7 +8,7 @@ class Emptycart extends React.Component{
   }
   render(){
       return <>
-       <Header/>
+      <Header/>
        <div className="cart_pgsec">
            <div className="empty_cart_sec">
              <div className="cart_mess">
