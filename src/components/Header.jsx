@@ -28,7 +28,7 @@ const Header = () => {
      dispatch(isLoggedUser(responseObj))
 
      localStorage.clear();     
-    let pathUrl = "http://localhost:3000/";
+    let pathUrl = "https://swipecart.herokuapp.com/";
     window.location.href = pathUrl;   
    })
 }
