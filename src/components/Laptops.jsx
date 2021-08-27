@@ -1,26 +1,33 @@
-import react from "react";
+import React from "react"
 import Header from "./Header.jsx";
 import Laptoplist from "../jsonlist/Laptopslist.json";
 import { Link} from "react-router-dom";
 import Productstrip from "./Productstrip"
 //import Nevigationstrip from "./Nevigationstrip.jsx";
-function Laptops(){
-
-  const SelectedBrand=(e)=>{
+export default class Laptops extends React.Component{  
+    constructor(props){
+      super();
+      this.state = {
+        products:Laptoplist
+  
+      }
+    }
+  SelectedBrand=(e)=>{
     const name=e.target.value
-    this.state.products.filter(item=>{    
-      this.setState((prevState=>{
-       if(name===item.prodName){
-         console.log(item)
-        this.state.products.push(item)
-        console.log(item)
-         return{
-           ...this.state.products, products:[item]
-         }
-       }
-      }))
+  
+    Laptoplist.filter(item=>{     
+        if(name===item.prodName ){
+          this.state.products=[]; 
+          this.setState(prevState=>{
+            return {
+                products:prevState.products.concat(item)
+             }  
+          })
+        }
     })
-  }
+    
+    }
+    render(){
     return (
       <>
       <Header/>
@@ -34,7 +41,7 @@ function Laptops(){
            <p className="ftitle">Filters</p><hr/>
            <div className="left-sec-item">
            <div className="custom-select">
-          <select onChange={SelectedBrand}>
+          <select onChange={this.SelectedBrand.bind(this)}>
               <option value="All">Select Item</option>
               <option value="Dell">Dell</option>
               <option value="Lenovo">Lenovo</option>
@@ -82,6 +89,5 @@ function Laptops(){
 </div>
 </section>
 </> 
-
-)}
-export default Laptops;
+ )}
+}

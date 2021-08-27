@@ -8,31 +8,28 @@ export default class Smartphones extends React.Component{
   constructor(props){
     super();
     this.state = {
-      products:[]
+      products:Smartphoneslist
 
     }
   }
   SelectedBrand=(e)=>{
   const name=e.target.value
-  this.state.products.filter(item=>{    
-    this.setState((prevState=>{
-     if(name===item.prodName){
-      // console.log(name + " " + item.prodName)
-      // console.log(item)
-      this.state.products.push(item)
-      console.log(item)
-       return{
-         ...this.state.products, products:[item]
-       }
-     }
-  
-    }))
-  })
 
+   Smartphoneslist.filter(item=>{     
+      if(name===item.prodName ){
+        this.state.products=[]; 
+        this.setState(prevState=>{
+          return {
+              products:prevState.products.concat(item)
+           }  
+        })
+      }
+  })
+  
   }
   render(){
-    const productsItem=this.state.products==[] ? Smartphoneslist : this.state.products;
-    console.log(productsItem)
+    //const productsItem=this.state.products==[] ? Smartphoneslist : this.state.products;
+    //console.log(productsItem)
     return(
       <>
        <Header/>
@@ -46,7 +43,7 @@ export default class Smartphones extends React.Component{
          <p className="ftitle">Filters</p><hr/>
          <div className="left-sec-item">
           <div className="custom-select">
-          <select onChange={this.SelectedBrand}>
+          <select onChange={this.SelectedBrand.bind(this)}>
               <option value="All">Select Item</option>
               <option value="Samsung">SAMSUNG</option>
               <option value="Vivo">VIVO</option>
@@ -59,7 +56,7 @@ export default class Smartphones extends React.Component{
     </div>
       </div>
       <div className="right-product-sec">           
-        {Smartphoneslist.map(item => (
+        {this.state.products.map(item => (
          <>
          <Link to={item.url} key={item.id} target="_blank">
          <div className="product smartphones" name={item.prodName}>

@@ -1,7 +1,7 @@
 [
 {
     "id":"325",
-    "prodName":"Laptop",
+    "prodName":"Dell",
     "prodTitle": "Dell Vostro Core i5 10th Gen",
     "url": "/laptop?attr_brand_new_id=325",
     "prodOfferPrice": "53,490",
@@ -18,7 +18,7 @@
     "quantity":"1"
 }, {
     "id":"326",
-    "prodName":"Laptop",
+    "prodName":"Dell",
     "prodTitle": "Dell Vostro Core i3 10th Gen",
     "url": "/laptop?attr_brand_new_id=326",
     "prodOfferPrice": "39,998",
@@ -35,7 +35,7 @@
     "quantity":"1"
 }, {
     "id":"327",
-    "prodName":"Laptop",
+    "prodName":"Dell",
     "prodTitle": "Dell G3 Core i5 10th Gen",
     "url": "/laptop?attr_brand_new_id=327",
     "prodOfferPrice": "73,990",
@@ -53,7 +53,7 @@
 },
 {
     "id":"329",
-    "prodName":"Laptop",
+    "prodName":"Dell",
     "prodTitle": "Dell Inspiron 7000 Core i5 10th Gen",
     "url": "/laptop?attr_brand_new_id=329",
     "prodOfferPrice": "91,252",
@@ -70,7 +70,7 @@
     "quantity":"1"
 }, {
     "id":"330",
-    "prodName":"Laptop",
+    "prodName":"Dell",
     "prodTitle": "Dell Inspiron Ryzen 5 Quad Core",
     "url": "/laptop?attr_brand_new_id=330",
     "prodOfferPrice": "44,855",
