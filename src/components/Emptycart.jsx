@@ -18,7 +18,7 @@ class Emptycart extends React.Component{
               </div>
              <h1 className="cart_txt">Your cart is empty!</h1>
              <span>Add items to it now.</span>
-             <Link to="https://swipecart.herokuapp.com/" className="shop_now">Shop Now</Link>
+             <Link to="/" className="shop_now">Shop Now</Link>
              </div>
             </div>
             </div>
