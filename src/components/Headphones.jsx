@@ -8,18 +8,18 @@ function Headphones(){
 
   const SelectedBrand=(e)=>{
     const name=e.target.value
-    this.state.products.filter(item=>{    
-      this.setState((prevState=>{
-       if(name===item.prodName){
-         console.log(item)
-        this.state.products.push(item)
-        console.log(item)
-         return{
-           ...this.state.products, products:[item]
-         }
-       }
-      }))
-    })
+    // this.state.products.filter(item=>{    
+    //   this.setState((prevState=>{
+    //    if(name===item.prodName){
+    //      console.log(item)
+    //     this.state.products.push(item)
+    //     console.log(item)
+    //      return{
+    //        ...this.state.products, products:[item]
+    //      }
+    //    }
+    //   }))
+    // })
   }
       return (
         <>

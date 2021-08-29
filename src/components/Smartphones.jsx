@@ -9,14 +9,21 @@ export default class Smartphones extends React.Component{
     super();
     this.state = {
       products:Smartphoneslist
-
     }
   }
+
   SelectedBrand=(e)=>{
   const name=e.target.value
-
-   Smartphoneslist.filter(item=>{     
-      if(name===item.prodName ){
+  
+   Smartphoneslist.filter(item=>{ 
+     if(name=="All"){
+      this.setState(prevState=>{
+        return {
+            products:prevState.products=Smartphoneslist
+         }  
+      })
+     }    
+      else if(name===item.prodName ){
         this.state.products=[]; 
         this.setState(prevState=>{
           return {
@@ -43,14 +50,25 @@ export default class Smartphones extends React.Component{
          <p className="ftitle">Filters</p><hr/>
          <div className="left-sec-item">
           <div className="custom-select">
+        
           <select onChange={this.SelectedBrand.bind(this)}>
-              <option value="All">Select Item</option>
+              <option value="All" class="brandName">All Brands</option>
               <option value="Samsung">SAMSUNG</option>
               <option value="Vivo">VIVO</option>
               <option value="OPPO">OPPO</option>
-              <option value="REDMI">REDMI</option>
+              <option value="REDMI">REDMI</option>  
+             
          </select>
-     </div>
+         {/* <div class="_2gmUFU _3V8rao">Brand</div>
+              <hr />
+           <div class="left-sec-item">
+            <li className="left-list-items"> <input type="checkbox"  name="Samsung" value="Samsung"/><span className="list_name">SAMSUNG</span></li>
+            <li className="left-list-items"> <input type="checkbox" name="Vivo" value="Vivo"/><span className="list_name">VIVO</span></li>
+            <li className="left-list-items"> <input type="checkbox" name="REDMI" value="REDMI"/><span className="list_name">REDMI</span></li>
+            <li className="left-list-items"> <input type="checkbox" name="OPPO" value="OPPO"/><span className="list_name">OPPO</span></li>
+           </div><hr /> 
+            */}
+        </div>
       </div>
      </div>
     </div>

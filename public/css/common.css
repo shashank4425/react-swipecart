@@ -2,7 +2,7 @@
   .header-secondary {
     background: #2874f0;
     width: 100%;
-    height: 53px;
+    height: 56px;
     box-shadow: 0px 0px 0px 0px;
     position: -webkit-sticky;
     position: sticky;
@@ -21,7 +21,7 @@
   .brand-logo {
     margin: 6px 0px;
     position: absolute;
-    left: 20%;
+    left:40%;
     padding:4px;
   }
   .more{
@@ -68,7 +68,7 @@
   div.right-sec {
     float: right;
     height: 100%;
-    width: 15%;
+    width: 20%;
   }
   .ac-btn {
     margin: 18px 11px;
@@ -76,18 +76,18 @@
   }
   
   .right-sec .log-btn {
-    padding: 8px 23px;
-    font-size: 1rem;
+    padding: 7px 42px;
+    font-size: 1.1rem;
     background: #fff;
     color: #2874f0;
+    /* font-weight: 600; */
     border: none;
-    font-family: AllianzSansBold;
+    font-family: sans-serif;
     outline: none;
     text-decoration: none;
     border-radius: 0px;
     cursor: pointer;
-    box-shadow: 0px 0px 2px 0px;
-  }
+}
   .cart_sec {
     display: inline-block;
     position: absolute;

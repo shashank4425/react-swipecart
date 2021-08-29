@@ -268,12 +268,10 @@ body {
   /* smartphone component css */
   
   .custom-select {
-    width: 200px;
     position: relative;
   }
   .custom-select select {
     border: none;
-    border-bottom: 1px solid gray;
     width: 100%;
     outline: none;
   }
