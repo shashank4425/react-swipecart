@@ -11,7 +11,7 @@ const Header = () => {
     .then(res => {    
      const responseObj = res.data;  
      console.log(responseObj)
-     //dispatch(isLoggedUser(responseObj))
+     dispatch(isLoggedUser(responseObj))
      console.log(LogStatus + "IS DATA")
     })
   }
