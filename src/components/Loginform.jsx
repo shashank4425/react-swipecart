@@ -7,7 +7,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 const Loginform = () =>{ 
   const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
-  console.log("log status" + LogStatus);
+  console.log(" fd "+LogStatus)
+ // const LogId= useSelector((state) => state.isLoggedUser.payload.loginId);
+  //onsole.log(" fd "+LogId)
   const[Logdata,User]=useState({
     emailid: "",
     password: "",
@@ -37,18 +39,10 @@ const history=useHistory();
             logError:status.errMess
            }
           }))
-        //  this.setState((preState =>{
-        //    return {
-        //      AuthErrMsg:preState.AuthErrMsg=status.errMess
-        //    }
-        //  }))
      }
      else{
      dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
      history.push("/")
-      //  localStorage.setItem("sessionId", status.log_userId)
-      //   let pathUrl = "http://swipecart.herokuapp.com/";          
-      //   window.location.href = pathUrl;  
      }
     }).catch(error => {
       console.log("Error got")

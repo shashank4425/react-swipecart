@@ -27,7 +27,7 @@ const Header = () => {
      console.log(responseObj)
      dispatch(isLoggedUser(responseObj))
      localStorage.clear();     
-    let pathUrl = "https://swipecart.herokuapp.com/";
+    let pathUrl = "/";
     window.location.href = pathUrl;   
    })
 }
