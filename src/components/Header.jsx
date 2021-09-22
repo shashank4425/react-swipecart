@@ -5,13 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link,NavLink } from "react-router-dom";
 const Header = () => {
   const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
+  const LogInfo= useSelector((state) => state.isLoggedUser.loginInfo);
    const dispatch=useDispatch();
   const userAuth=async () => {
     const responseData=await axios.get(`/Swipecart/api-user-auth_token`)
     .then(res => {    
      const responseObj = res.data;  
      console.log(responseObj)
-     dispatch(isLoggedUser(responseObj))
+     dispatch(isLoggedUser({LogStatus:responseObj,LogInfo:LogInfo}))
      console.log(LogStatus + "IS DATA")
     })
   }

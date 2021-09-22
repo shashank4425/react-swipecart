@@ -7,9 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 const Loginform = () =>{ 
   const LogStatus= useSelector((state) => state.isLoggedUser.isLogged);
+  const LogInfo= useSelector((state) => state.isLoggedUser.loginInfo);
   console.log(" fd "+LogStatus)
- // const LogId= useSelector((state) => state.isLoggedUser.payload.loginId);
-  //onsole.log(" fd "+LogId)
   const[Logdata,User]=useState({
     emailid: "",
     password: "",
@@ -41,7 +40,7 @@ const history=useHistory();
           }))
      }
      else{
-     dispatch(isLoggedUser({LogStatus:status.sessionStatus}))
+     dispatch(isLoggedUser({LogStatus:status.sessionStatus,LogInfo:status.log_userId}))
      history.push("/")
      }
     }).catch(error => {

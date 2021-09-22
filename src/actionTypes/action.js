@@ -1,8 +1,8 @@
 import { ActionType } from "../constant/ActionType";
 
-export const isLoggedUser = (isLogged) => {
+export const isLoggedUser = (data) => {
     return {
         type: ActionType.IS_LOGGED,
-        payload: isLogged
+        payload: data
     }
 }
